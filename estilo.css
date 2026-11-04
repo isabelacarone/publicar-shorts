@@ -1,0 +1,11 @@
+:root { --fundo: #faf7f0; --texto: #22222a; --suave: #5c5c66; --link: #1e4262; }
+@media (prefers-color-scheme: dark) { :root { --fundo: #17181d; --texto: #ececf0; --suave: #a6a6b0; --link: #8fc0e4; } }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 17px/1.6 system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 1.8rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+p, li { color: var(--texto); }
+.meta, footer { color: var(--suave); font-size: .9rem; }
+a { color: var(--link); }
+nav { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 32px; font-size: .95rem; }
+footer { margin-top: 48px; border-top: 1px solid color-mix(in srgb, var(--suave) 30%, transparent); padding-top: 16px; }
